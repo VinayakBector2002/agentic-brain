@@ -19,20 +19,22 @@ Great for people who want AI to **take charge** of parts of their brain instead 
 
 ```
 agentic-brain/
-├── soul.md                  # Brain personality, values, core rules (loaded every session)
-├── agents.md                # Defines agents and their responsibilities
-├── tasks.md                 # Reusable workflows (PlanMyDay, AddEvent, etc.)
-├── memory/                  # Persistent knowledge
-│   ├── facts.md             # Long-term facts about you
-│   └── history/             # Daily logs & past decisions (auto-created)
-├── calendar/                # Calendar-specific setup
-│   ├── config.md            # Tool/integration details (iCalPal, AppleScript, etc.)
-│   ├── preferences.md       # Scheduling rules, energy blocks, buffers…
-│   └── events-log.md        # Learned patterns (optional smart suggestions)
-├── tools/                   # Safe action scripts
-│   └── create-event.scpt    # Example: approve-then-act calendar writer
-├── ROADMAP.md               # Public development plan
-└── README.md                # ← You are here
+├── soul.example.md           # Example brain personality (copy to soul.md)
+├── agents.example.md         # Example agent definitions (copy to agents.md)
+├── tasks.example.md          # Example workflows (copy to tasks.md)
+├── memory/
+│   ├── facts.example.md      # Example long-term knowledge (copy to facts.md)
+│   └── history/              # Daily logs & past decisions (auto-created)
+├── calendar/
+│   ├── config.example.md     # Example calendar config (copy to config.md)
+│   └── preferences.example.md # Example scheduling preferences (copy to preferences.md)
+├── tools/
+│   ├── create-event.scpt     # Create calendar events (AppleScript)
+│   └── delete-event.scpt     # Delete calendar events (AppleScript)
+├── .gitignore                # Protects personal files
+├── LICENSE                   # MIT License
+├── ROADMAP.md                # Public development plan
+└── README.md                 # ← You are here
 ```
 
 Everything stays simple: markdown for configuration + tiny scripts for actions.
@@ -50,7 +52,9 @@ Everything stays simple: markdown for configuration + tiny scripts for actions.
    cp soul.example.md soul.md
    cp agents.example.md agents.md
    cp tasks.example.md tasks.md
+   cp memory/facts.example.md memory/facts.md
    cp calendar/config.example.md calendar/config.md
+   cp calendar/preferences.example.md calendar/preferences.md
    ```
 
 3. **Edit soul.md first** — this is the heart of the system  
