@@ -1,0 +1,27 @@
+# Personal identity & memory — NEVER commit these
+soul.md
+memory/
+facts.md
+preferences.md
+events-log.md
+history/
+
+# macOS / editor junk
+.DS_Store
+*.swp
+*~
+Thumbs.db
+
+# Temporary / build files (if you add scripts later)
+*.log
+*.tmp
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Keep example files visible — they are safe
+!soul.example.md
+!agents.example.md
+!tasks.example.md
+!calendar/config.example.md
