@@ -34,20 +34,18 @@ on run argv
                 tell myCal
                     make new event with properties {summary:eventTitle, start date:startDate, end date:endDate, allday event:true}
                 end tell
+                
+                return "All-day event created: " & eventTitle & " on " & eventDateString
             else
                 set endDate to startDate + (eventDuration * 60)
                 tell myCal
                     make new event with properties {summary:eventTitle, start date:startDate, end date:endDate}
                 end tell
-            end if
-            
-            if isAllDay then
-                return "All-day event created: " & eventTitle & " on " & eventDateString
-            else
+                
                 return "Event created: " & eventTitle
             end if
         else
-            return "Calendar not found: " & calendarName
+            return "Calendar not found: " & calendarName & ". Available calendars: " & (name of every calendar as string)
         end if
     end tell
 end run
