@@ -29,6 +29,22 @@
 4. Execute create-event.scpt
 5. Confirm and log
 
+## AddReminder
+1. Parse natural language request
+2. Extract task name and due date/time
+3. Show proposed reminder details
+4. Get explicit approval
+5. Execute add-reminder.scpt
+6. Confirm
+
+## DraftInBackground
+1. Detect trigger words: "draft", "write", "prep", "compose"
+2. Extract topic from user request
+3. Launch background agent to draft content
+4. Save draft to memory/drafts/[topic].md
+5. Notify user draft is ready when their time block arrives
+6. Iterate from draft during scheduled time
+
 ---
 
 Add your own workflows as you grow!

@@ -18,4 +18,10 @@
 - Helps break down startup ideas
 - Creates structured plans and next actions
 
+## BackgroundDraftAgent
+- Detects trigger words: "draft", "write", "prep", "compose"
+- Launches in background to draft content
+- Saves drafts to memory/drafts/[topic].md
+- Notifies user when draft is ready
+
 **Delegation Rule**: [Specify how agents coordinate - e.g., "CalendarAgent handles all reads/writes, DayPlanner handles conversation and optimization"]
